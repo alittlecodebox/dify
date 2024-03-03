@@ -70,6 +70,9 @@ services:
       # If you want to enable cross-origin support,
       # you must use the HTTPS protocol and set the configuration to `SameSite=None, Secure=true, HttpOnly=true`.
       #
+      COOKIE_HTTPONLY: 'true'
+      COOKIE_SAMESITE: 'None'
+      COOKIE_SECURE: 'true'
       # The type of storage to use for storing user files. Supported values are `local` and `s3`, Default: `local`
       STORAGE_TYPE: local
       # The path to the local storage directory, the directory relative the root path of API service codes or absolute path. Default: `storage` or `/home/john/storage`.
